@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+        	"moduleResolution": "node",
+		"esModuleInterop": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "esnext"
+	},
+	"include": ["src/**/*"]
+}
