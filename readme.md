@@ -1,17 +1,18 @@
 # Concorde
-A package manager for Discord.
+An client mod for Discord.
 
 # Features
-- Custom repos for hosting your own packages
-- Completely customizable buildsystem, allowing for package code transpilation, etc
 - Quick
 - Tiny
-- Completely customizable package management GUI, use our official GUI, build your own, or use none at all and use the CLI to manage packages.
+- Strictly follows the Unix Philosophy
 
 # Installation
 TODO
 
 # FAQ
+
+## How do I install modules to use with Concorde?
+Concorde does not come with any method of installing modules itself, instead you can use package managers for Concorde.
 
 ## What Discord versions does Concorde work on?
 All Discord desktop editions (Stable, PTB, Canary) are supported. However, only the current versions of those editions are officially supported. Whilst Concorde may unintentionally also work for older versions of Discord, they are not supported and all bug reports filed regarding them will be removed/ignored. A browser version is currently in the works.
