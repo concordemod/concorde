@@ -1,6 +1,14 @@
 # Concorde
 An client mod for Discord.
 
+# Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [FAQ](#faq)
+  - [What Discord versions does Concorde work on?](#what-discord-versions-does-concorde-work-on)
+  - [Why isn't there a GUI installer?](#why-isnt-there-a-gui-installer)
+- [Disclaimer](#disclaimer)
+
 # Features
 - Quick
 - Tiny
