@@ -44,6 +44,6 @@ require.cache[electronPath].exports = {
   BrowserWindow
 };
 
-console.log("Concorde loaded! Starting Discord...")
+console.log("Concorde loaded! Starting Discord...");
 
 require(require.main.filename);

@@ -8,7 +8,7 @@ function rendererLoad() {
 };
 
 function pluginsLoad() {
-  const pluginPath = join(homedir(), ".concorde/plugins/")
+  const pluginPath = join(homedir(), ".concorde/plugins/");
   readdirSync(pluginPath).forEach(folder => {
     electron.webFrame.executeJavaScript(readFileSync(join(pluginPath, folder, "plugin.js"), "utf-8"));
   });
@@ -17,7 +17,7 @@ function pluginsLoad() {
 function loadAll() {
   rendererLoad();
   pluginsLoad();
-  console.log("Concorde fully loaded!")
+  console.log("Concorde fully loaded!");
 };
 
 if (document.readyState === "complete") {
