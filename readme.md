@@ -19,7 +19,7 @@ TODO
 
 # FAQ
 
-## How do I install modules to use with Concorde?
+## How do I install plugins to use with Concorde?
 To manually install plugins, place Concorde plugins in the `.concorde/plugins` folder in your home folder. A plugin manager is in the works.
 
 ## What Discord versions does Concorde work on?
