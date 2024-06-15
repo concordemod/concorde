@@ -1,0 +1,38 @@
+name: Create release
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  Create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Node.js setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: pnpm setup
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Dependencies setup
+        run: pnpm install --frozen-lockfile
+
+      - name: Building
+        run: pnpm run build
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "dist/concorde.asar"
+          makeLatest: true
+
