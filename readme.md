@@ -31,7 +31,7 @@ TODO
 To manually install plugins, place Concorde plugins in the `.concorde/plugins` folder in your home folder. A plugin manager is in the works.
 
 ## What Discord versions does Concorde work on?
-All Discord desktop editions (Stable, PTB, Canary) are supported. However, only the current versions of those editions are officially supported. Whilst Concorde may unintentionally also work for older versions of Discord, they are not supported and all bug reports filed regarding them will be removed/ignored. A browser version is currently in the works.
+All Discord desktop editions (Stable, PTB and Canary) are supported. However, only the current versions of those editions are officially supported. Whilst Concorde may unintentionally also work for older versions of Discord, they are not supported and all bug reports filed regarding them will be removed/ignored. A browser version is currently in the works.
 
 ## Why isn't there a GUI installer?
 A GUI installer is a waste of time and energy to create for Concorde, and would go against Concorde's philosophy. Concorde is not by any means an easy-to-use Discord client mod, and that is by design. Client mods and exploits should **not** be used by users, unless they have a good knowledge of computers and programming. If you are considering using Concorde and cannot read code, **do not use Concorde**. There have been far too many cases of malicious plugins/packages stealing Discord tokens through client mods such as Concorde. Before installing any plugins/packages, **read its source code**.
