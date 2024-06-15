@@ -4,7 +4,7 @@
   "description": "A client mod for Discord.",
   "private": true,
   "scripts": {
-    "buildAsar": "asar p build/ dist/app.asar",
+    "buildAsar": "asar p build/ dist/concorde.asar",
     "buildBase": "node scripts/build.mjs",
     "build": "pnpm run buildBase && cp scripts/resources/package.json build/package.json && pnpm run buildAsar",
     "test": "echo \"Error: no test specified\" && exit 1"
