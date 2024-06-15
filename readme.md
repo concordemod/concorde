@@ -29,6 +29,6 @@ All Discord desktop editions (Stable, PTB, Canary) are supported. However, only 
 A GUI installer is a waste of time and energy to create for Concorde, and would go against Concorde's philosophy. Concorde is not by any means an easy-to-use Discord client mod, and that is by design. Client mods and exploits should **not** be used by users, unless they have a good knowledge of computers and programming. If you are considering using Concorde and cannot read code, **do not use Concorde**. There have been far too many cases of malicious plugins/packages stealing Discord tokens through client mods such as Concorde. Before installing any plugins/packages, **read its source code**.
 
 # Disclaimer
-Discord is trademark of Discord Inc. This project is not in anyway associated with or endorsed by Discord Inc.
+Discord is a trademark of Discord Inc. This project is not in anyway associated with or endorsed by Discord Inc.
 
 Use of Concorde violates Discord's Terms of Service. Chances of your account getting banned due to use of Concorde, or any other Discord client modification, are low and has not been reported. However, do not use Concorde if your Discord account is extremely important to you. 
