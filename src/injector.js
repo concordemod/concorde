@@ -1,7 +1,7 @@
 import { dirname, join } from "path";
 import electron from "electron";
 
-console.log("Welcome to Concorde!");
+console.log("Welcome to Concorde! Concorde is currently being loaded!");
 
 electron.app.whenReady().then(() => {
   electron.session.defaultSession.webRequest.onHeadersReceived(({ responseHeaders }, callback) => {

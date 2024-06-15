@@ -17,7 +17,7 @@ function pluginsLoad() {
 function loadAll() {
   rendererLoad();
   pluginsLoad();
-  console.log("Concorde fully loaded!");
+  console.log("Concorde is fully loaded!");
 };
 
 if (document.readyState === "complete") {
