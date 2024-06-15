@@ -1,5 +1,13 @@
 # Concorde
-An client mod for Discord.
+
+![GitHub License](https://img.shields.io/github/license/concordemod/concorde?style=for-the-badge) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/concordemod/concorde?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/concordemod/concorde?style=for-the-badge) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/concordemod/concorde?style=for-the-badge)
+![GitHub Release](https://img.shields.io/github/v/release/concordemod/concorde?style=for-the-badge)
+
+<hr>
+
+Say hello to Concorde!
+
+Concorde is an open source client modification for Discord that is designed for customisability, speed, and size!
 
 # Table of Contents
 - [Features](#features)
@@ -9,10 +17,10 @@ An client mod for Discord.
   - [Why isn't there a GUI installer?](#why-isnt-there-a-gui-installer)
 - [Disclaimer](#disclaimer)
 
-# Features
-- Quick
-- Tiny
-- Strictly follows the Unix Philosophy
+# Benefits
+- Speed; Concorde is fast!
+- Size; Concorde is a very compact client modification!
+- Philosophy; Concorde follows the UNIX Philosophy!
 
 # Installation
 TODO
