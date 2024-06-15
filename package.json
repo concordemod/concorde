@@ -1,9 +1,8 @@
 {
   "name": "concorde",
-  "version": "1.0.0",
+  "version": "0.1.0-beta",
   "description": "A client mod for Discord.",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "buildAsar": "asar p build/ dist/app.asar",
     "buildBase": "node scripts/build.mjs",
