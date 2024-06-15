@@ -1,50 +1,49 @@
-import { dirname, join } from "path"
-import electron, { app } from "electron"
+import { dirname, join } from "path";
+import electron from "electron";
 
-console.log("Welcome to Concorde!")
+console.log("Welcome to Concorde!");
 
-app.whenReady().then(() => {
+electron.app.whenReady().then(() => {
   electron.session.defaultSession.webRequest.onHeadersReceived(({ responseHeaders }, callback) => {
-    const csp = Object.keys(responseHeaders).find((header) => header.toLowerCase() === "content-security-policy")
-    delete responseHeaders[csp]
-    callback({ cancel: false, responseHeaders })
-  })
-})
+    const csp = Object.keys(responseHeaders).find((header) => header.toLowerCase() === "content-security-policy");
+    delete responseHeaders[csp];
+    callback({ cancel: false, responseHeaders });
+  });
+});
 
-const injectorPath = require.main.filename
+const injectorPath = require.main.filename;
 
-const asarPath = join(dirname(injectorPath), "..", "pre.asar")
+const asarPath = join(dirname(injectorPath), "..", "pre.asar");
 
-const discordPkg = require(join(asarPath, "package.json"))
+const discordPkg = require(join(asarPath, "package.json"));
 
-require.main.filename = join(asarPath, discordPkg.main)
+require.main.filename = join(asarPath, discordPkg.main);
 
-app.setAppPath(asarPath)
-
-const ipcManager = (window) => { }
+electron.app.setAppPath(asarPath);
 
 class BrowserWindow extends electron.BrowserWindow {
   constructor(options) {
-    const original = options.webPreferences.preload
-    options.webPreferences.preload = join(__dirname, "preload.js")
-    options.webPreferences.sandbox = false
-    process.env.DISCORD_PRELOAD = original
-    super(options)
-    ipcManager(this)
-  }
-}
+    const original_preload = options.webPreferences.preload;
+    options.webPreferences.preload = join(__dirname, "preload.js");
+    options.webPreferences.sandbox = false;
+    process.env.DISCORD_PRELOAD = original_preload;
+    super(options);
+  };
+};
 
 Object.assign(BrowserWindow, electron.BrowserWindow);
 
+Object.defineProperty(BrowserWindow, "name", { value: "BrowserWindow", configurable: true });
+
 const electronPath = require.resolve("electron");
 
-delete require.cache[electronPath].exports
+delete require.cache[electronPath].exports;
 
 require.cache[electronPath].exports = {
   ...electron,
   BrowserWindow
-}
+};
 
 console.log("Concorde loaded! Starting Discord...")
 
-require(require.main.filename)
+require(require.main.filename);

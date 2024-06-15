@@ -5,9 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "buildAsar": "node scripts/builder/buildAsar.mjs",
-    "buildBase": "node scripts/builder/buildBase.mjs",
-    "build": "pnpm run buildAsar && pnpm run buildBase",
+    "buildAsar": "asar p build/ dist/app.asar",
+    "buildBase": "node scripts/build.mjs",
+    "build": "pnpm run buildBase && cp scripts/resources/package.json build/package.json && pnpm run buildAsar",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "neeeerrrdd",
