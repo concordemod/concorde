@@ -20,7 +20,7 @@ TODO
 # FAQ
 
 ## How do I install modules to use with Concorde?
-Concorde does not come with any method of installing modules itself, instead you can use package managers for Concorde.
+To manually install plugins, place Concorde plugins in the `.concorde/plugins` folder in your home folder. A plugin manager is in the works.
 
 ## What Discord versions does Concorde work on?
 All Discord desktop editions (Stable, PTB, Canary) are supported. However, only the current versions of those editions are officially supported. Whilst Concorde may unintentionally also work for older versions of Discord, they are not supported and all bug reports filed regarding them will be removed/ignored. A browser version is currently in the works.
