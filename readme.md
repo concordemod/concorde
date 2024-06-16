@@ -39,4 +39,4 @@ A GUI installer is a waste of time and energy to create for Concorde, and would 
 # Disclaimer
 Discord is a trademark of Discord Inc. This project is not in anyway associated with or endorsed by Discord Inc.
 
-Use of Concorde violates Discord's Terms of Service. Chances of your account getting banned due to use of Concorde, or any other Discord client modification, are low and has not been reported. However, do not use Concorde if your Discord account is extremely important to you. 
+Use of any client modification violates Discord's Terms of Service. Chances of your account getting banned due to use of Concorde, or any other Discord client modification, are extremely low and no cases have ever been reported. However, do not use Concorde if your Discord account is extremely important to you or your account is in low standing.
