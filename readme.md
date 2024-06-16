@@ -23,7 +23,11 @@ Concorde is an open source client modification for Discord that is designed for 
 - Philosophy; Concorde follows the UNIX Philosophy!
 
 # Installation
-TODO
+To install via Jetfuel (currently only supports MacOS):
+```bash
+bash -c "$(curl -sS https://raw.githubusercontent.com/concordemod/jetfuel/HEAD/jetfuel-unix.sh)"
+
+```
 
 # FAQ
 
